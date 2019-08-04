@@ -1,32 +1,143 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&subset=latin-ext');
-*{
-padding: 0;
-margin: 0;
-transition: 0.3s ease;
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,400,900&display=swap&subset=latin-ext");
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
-.hero{
-	height: 100%;
-	width: 100%;
-	background-image: url("hero.jpg");
-	background-size: cover;
-	  -webkit-filter: brightness(60%); /* Safari 6.0 - 9.0 */
-    filter:brightness(60%);
+.flex-center,
+main,
+main nav div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
-#hero{
-	height: 100%;
-	width: 100%;
-	position:absolute;
-	top:0;
-	display:flex;justify-content:center;align-items:center;height:100%;
+
+.active,
+main nav div:hover {
+    color: black;
 }
-h1{
-	color:white;
-	font-family: "Roboto", sans-serif;
-	font-weight: 700;
-	font-size: 5vw;
-	/*text-align:center;*/
+
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
-h1 span{
-	font-weight: 100;
+
+main h1 {
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    font-size: 3em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
 }
+
+main h1 span {
+    color: black;
+}
+
+main h1 span:hover+main {
+    background: black;
+}
+
+main img {
+    width: 35vw;
+    position: absolute;
+    bottom: 10vw;
+    right: 10vw;
+    display: none;
+    z-index: 3;
+}
+
+main nav {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    border-top: 1px solid black;
+}
+
+main nav div {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    position: relative;
+    background: white;
+    height: 100px;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 2.5em;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: White;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    padding: 5vw;
+}
+
+section h2 {
+    font-size: 3.5em;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+section h2 span {
+    color: black;
+}
+
+section p {
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+section i {
+    -webkit-transition: -webkit-transform ease-in-out 0.25s;
+    transition: -webkit-transform ease-in-out 0.25s;
+    transition: transform ease-in-out 0.25s;
+    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
+    position: absolute;
+    top: 5vw;
+    right: 5vw;
+    padding: 1vw;
+    font-size: 3.5em;
+}
+
+section i:hover {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+
+/*# sourceMappingURL=style.css.map */
