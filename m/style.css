@@ -36,24 +36,31 @@ main {
   display: flex;
 }
 
+main p {
+  width: 100%;
+  font-size: 5vw;
+  position: absolute;
+  text-align: justify;
+}
+
 main > div {
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   z-index: -1;
   position: absolute;
   top: 0;
 }
 
 main > div h1 {
-  height: 100vh;
-  width: 100vw;
   -ms-grid-column-align: space-evenly;
       justify-self: space-evenly;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
 main nav {
@@ -108,6 +115,67 @@ main img {
 }
 
 section {
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: none;
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 5vw;
+}
+
+section > div.align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section h2 {
+  font-size: 10vw;
+}
+
+section i {
+  position: absolute;
+  right: 0;
+  padding: 5vw;
+  font-size: 10vw;
+}
+
+section p {
+  margin-top: 5vw;
+  font-size: 5vw;
+}
+
+section ul li {
+  font-size: 5vw;
+  list-style-type: none;
+}
+
+section #projects div {
+  margin: 5vw 0;
+}
+
+section #projects div iframe {
+  width: 90vw;
+  height: 50.625vw;
+}
+
+section #projects div a {
+  text-decoration: none;
+  color: black;
+  font-size: 4vw;
+}
+
+section #email a {
+  color: black;
+}
+
+section #graphic-projects img {
+  width: 90vw;
 }
 /*# sourceMappingURL=style.css.map */

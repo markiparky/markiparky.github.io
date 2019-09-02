@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tile Calculator</h1>
+    <p>Írd be a szobád méreteit és a csempe árát</p>
+    <form onsubmit="calculate(); return false" action="" autocomplete="off">
+        <h2>Szélesség</h2>
+        <input id="width" placeholder="[m]" maxlength="10" type="number" required>
+        <h2>Magasság</h2>
+        <input id="height" placeholder="[m]" maxlength="10" type="number" required>
+        <h2>Csempe ára/nm</h2>
+        <input id="price" placeholder="[€]" maxlength="10" type="number" required>
+        <button type="submit">Kiszámol!</button>
+    </form>
+    <h3></h3>
+    <script src="script.js"></script>
+</body>
+
+</html

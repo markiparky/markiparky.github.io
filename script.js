@@ -8,18 +8,21 @@ function screenSize() {
 }
 screenSize();
 window.addEventListener("resize", screenSize)
-window.addEventListener("deviceorientation", (event) => {
-    console.log(event)
-})
-
+    /*
+    window.addEventListener("deviceorientation", (event) => {
+        console.log(event)
+    })
+    */
 
 const name = {
     odd: document.querySelectorAll("h1.odd"),
     even: document.querySelectorAll("h1.even")
 };
+/*
 const nameSpan = [document.querySelector("span#first"), document.querySelector("span#second"), document.querySelector("span#third")];
 //imgs for hover
 const codeImg = document.querySelector("img#code");
+
 //hover span
 nameSpan[0].addEventListener("mouseover", () => { codeImg.style.display = "block" });
 nameSpan[0].addEventListener("mouseleave", () => { codeImg.style.display = "none" });
@@ -29,7 +32,7 @@ nameSpan[1].addEventListener("mouseleave", () => {});
 
 nameSpan[2].addEventListener("mouseover", () => {});
 nameSpan[2].addEventListener("mouseleave", () => {});
-
+*/
 //nav
 //const btn = document.querySelectorAll("nav div");
 const btn = {
